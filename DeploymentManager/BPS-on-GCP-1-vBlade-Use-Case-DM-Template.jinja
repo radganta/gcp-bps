@@ -204,7 +204,7 @@ resources:
       boot: true
       type: PERSISTENT      
       initializeParams:
-        sourceImage: projects/{{ properties["GCP_VCONTROLLER_CUSTOM_IMAGE_PROJECT_NAME"] }}/global/images/{{ properties["GCP_VCONTROLLER_CUSTOM_IMAGE_NAME"] }}
+        sourceImage: projects/{{ properties["GCP_VCONTROLLER_CUSTOM_IMAGE_PROJECT_NAME"] }}/global/images/family/{{ properties["GCP_VCONTROLLER_CUSTOM_IMAGE_FAMILY_NAME"] }}
     networkInterfaces:
     - name: nic0
       network: $(ref.{{ properties["GCP_LOGIN_ID_TAG"] }}-{{ properties["GCP_PROJECT_TAG"] }}-{{ properties["GCP_MGMT_VPC_NETWORK_NAME"] }}.selfLink)
@@ -256,7 +256,7 @@ resources:
       boot: true
       type: PERSISTENT
       initializeParams:
-        sourceImage: projects/{{ properties["GCP_VBLADE_CUSTOM_IMAGE_PROJECT_NAME"] }}/global/images/{{ properties["GCP_VBLADE_CUSTOM_IMAGE_NAME"] }}
+        sourceImage: projects/{{ properties["GCP_VBLADE_CUSTOM_IMAGE_PROJECT_NAME"] }}/global/images/family/{{ properties["GCP_VBLADE_CUSTOM_IMAGE_FAMILY_NAME"] }}
     networkInterfaces:
     - name: nic0
       network: $(ref.{{ properties["GCP_LOGIN_ID_TAG"] }}-{{ properties["GCP_PROJECT_TAG"] }}-{{ properties["GCP_MGMT_VPC_NETWORK_NAME"] }}.selfLink)
