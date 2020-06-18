@@ -2,8 +2,8 @@
 
 # Input Argument Processing
 ARGV_REGION_NAME="us-central1"
-ARGV_LOGIN_ID_TAG="armdupre"
-ARGV_PROJECT_TAG="insight-2020"
+ARGV_LOGIN_ID_TAG="gcp-ixia"
+ARGV_PROJECT_TAG="open-ixia"
 ARGV_VERBOSE_OUTPUT="true"
 ARGV_OTHER_ARGUMENTS=()
 
