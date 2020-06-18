@@ -1,9 +1,9 @@
 ---
 info:
-  title: BreakingPoint-9-00Update3-GCP-DemoSetup-Deployment-DM-Template.jinja.schema
+  title: BPS-on-GCP-1-vBlade-Use-Case-DM-Template.jinja.schema
 
 imports:
-- path: BreakingPoint-9-00Update3-GCP-DemoSetup-Deployment-DM-Template.jinja
+- path: BPS-on-GCP-1-vBlade-Use-Case-DM-Template.jinja
 
 properties:
   GCP_PROJECT_NAME:
@@ -21,14 +21,14 @@ properties:
   GCP_OWNER_TAG:
     type: string
     default: gcp-ixia@google.com
-    
+
   GCP_LOGIN_ID_TAG:
     type: string
     default: gcp-ixia
 
   GCP_PROJECT_TAG:
     type: string
-    default: breakingpoint
+    default: open-ixia
 
   GCP_OPTIONS_TAG:
     type: string
@@ -74,7 +74,7 @@ properties:
   GCP_MGMT_FIREWALL_RULE_SOURCE_IP_RANGES:
     type: array
     default:
-    - 204.9.57.138/32
+    - 1.1.1.1/32
 
   GCP_CONSOLE_FIREWALL_RULE_NAME:
     type: string
@@ -254,7 +254,7 @@ properties:
 
   GCP_VCONTROLLER_CUSTOM_IMAGE_PROJECT_NAME:
     type: string
-    default: festive-freedom-255621
+    default: ixvm-261016
 
   GCP_VCONTROLLER_MACHINE_TYPE:
     type: string
@@ -287,7 +287,7 @@ properties:
 
   GCP_VBLADE_CUSTOM_IMAGE_PROJECT_NAME:
     type: string
-    default: festive-freedom-255621
+    default: ixvm-261016
 
   GCP_VBLADE_MACHINE_TYPE:
     type: string
