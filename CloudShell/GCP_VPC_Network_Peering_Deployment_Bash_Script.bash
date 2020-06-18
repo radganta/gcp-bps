@@ -79,13 +79,11 @@ then
 echo -e "% gcloud compute networks peerings create $GCP_TEST1_VPC_NETWORK_PEER_NAME\n\
 %	--network=$GCP_TEST1_VPC_NETWORK_NAME\n\
 %	--peer-network=$GCP_TEST2_VPC_NETWORK_NAME\n\
-%	--auto-create-routes\n\
 %	--peer-project=$GCP_PROJECT_NAME\n"
 fi
 gcloud compute networks peerings create $GCP_TEST1_VPC_NETWORK_PEER_NAME \
 	--network=$GCP_TEST1_VPC_NETWORK_NAME \
 	--peer-network=$GCP_TEST2_VPC_NETWORK_NAME \
-	--auto-create-routes \
 	--peer-project=$GCP_PROJECT_NAME
 	
 if [ "$GCP_VERBOSE_OUTPUT" == "true" ];
@@ -93,12 +91,10 @@ then
 echo -e "% gcloud compute networks peerings create $GCP_TEST2_VPC_NETWORK_PEER_NAME\n\
 %	--network=$GCP_TEST2_VPC_NETWORK_NAME\n\
 %	--peer-network=$GCP_TEST1_VPC_NETWORK_NAME\n\
-%	--auto-create-routes\n\
 %	--peer-project=$GCP_PROJECT_NAME\n"
 fi
 gcloud compute networks peerings create $GCP_TEST2_VPC_NETWORK_PEER_NAME \
 	--network=$GCP_TEST2_VPC_NETWORK_NAME \
 	--peer-network=$GCP_TEST1_VPC_NETWORK_NAME \
-	--auto-create-routes \
 	--peer-project=$GCP_PROJECT_NAME
 #eof
