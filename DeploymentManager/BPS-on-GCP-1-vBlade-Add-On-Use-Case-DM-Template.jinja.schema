@@ -233,8 +233,8 @@ properties:
     default: bps-vcontroller-01-addon
 
   GCP_VCONTROLLER_SERIAL_PORT_ENABLE:
-    type: boolean
-    default: 'true'
+    type: string
+    default: "'true'"
 
   GCP_VCONTROLLER_CUSTOM_IMAGE_PROJECT_NAME:
     type: string
@@ -266,8 +266,8 @@ properties:
     default: bps-vblade-01-addon
     
   GCP_VBLADE_SERIAL_PORT_ENABLE:
-    type: boolean
-    default: 'true'
+    type: string
+    default: "'true'"
 
   GCP_VBLADE_CUSTOM_IMAGE_PROJECT_NAME:
     type: string
