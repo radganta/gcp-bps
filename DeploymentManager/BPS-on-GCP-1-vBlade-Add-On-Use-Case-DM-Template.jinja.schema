@@ -28,7 +28,7 @@ properties:
 
   GCP_PROJECT_TAG:
     type: string
-    default: open-ixia
+    default: open-ixia-gcp-bps
 
   GCP_OPTIONS_TAG:
     type: string
@@ -242,7 +242,7 @@ properties:
 
   GCP_VCONTROLLER_CUSTOM_IMAGE_FAMILY_NAME:
     type: string
-    default: ixia-breakingpoint-virtual-controller-9-10
+    default: ixia-breakingpoint-virtual-controller-9-00-108
 
   GCP_VCONTROLLER_MACHINE_TYPE:
     type: string
@@ -275,7 +275,7 @@ properties:
 
   GCP_VBLADE_CUSTOM_IMAGE_FAMILY_NAME:
     type: string
-    default: ixia-breakingpoint-virtual-blade-9-10
+    default: ixia-breakingpoint-virtual-blade-9-00-108
 
   GCP_VBLADE_MACHINE_TYPE:
     type: string

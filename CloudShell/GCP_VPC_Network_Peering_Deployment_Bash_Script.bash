@@ -4,7 +4,7 @@
 ARGV_PROJECT_NAME="ixvm-261016"
 ARGV_REGION_NAME="us-central1"
 ARGV_LOGIN_ID_TAG="gcp-ixia"
-ARGV_PROJECT_TAG="open-ixia"
+ARGV_PROJECT_TAG="open-ixia-gcp-bps"
 ARGV_VERBOSE_OUTPUT="true"
 ARGV_OTHER_ARGUMENTS=()
 
