@@ -1,9 +1,9 @@
 ---
 info:
-  title: BPS-on-GCP-1-vBlade-Use-Case-DM-Template.jinja.schema
+  title: BPS-on-GCP-1-vBlade-Demo-Use-Case-DM-Template.jinja.schema
 
 imports:
-- path: BPS-on-GCP-1-vBlade-Use-Case-DM-Template.jinja
+- path: BPS-on-GCP-1-vBlade-Demo-Use-Case-DM-Template.jinja
 
 properties:
   GCP_PROJECT_NAME:
