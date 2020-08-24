@@ -196,6 +196,7 @@ resources:
 - name: {{ properties["GCP_LOGIN_ID_TAG"] }}-{{ properties["GCP_PROJECT_TAG"] }}-{{ properties["GCP_VCONTROLLER_INSTANCE_NAME"] }}
   type: compute.v1.instance
   properties:
+    canIpForward: {{ properties["GCP_VCONTROLLER_CAN_IP_FORWARD"] }}
     zone: {{ properties["GCP_ZONE_NAME"] }}
     machineType: zones/{{ properties["GCP_ZONE_NAME"] }}/machineTypes/{{ properties["GCP_VCONTROLLER_MACHINE_TYPE"] }}
     disks:
@@ -248,6 +249,7 @@ resources:
 - name: {{ properties["GCP_LOGIN_ID_TAG"] }}-{{ properties["GCP_PROJECT_TAG"] }}-{{ properties["GCP_VBLADE_INSTANCE_NAME"] }}
   type: compute.v1.instance
   properties:
+    canIpForward: {{ properties["GCP_VBLADE_CAN_IP_FORWARD"] }}
     zone: {{ properties["GCP_ZONE_NAME"] }}
     machineType: zones/{{ properties["GCP_ZONE_NAME"] }}/machineTypes/{{ properties["GCP_VBLADE_MACHINE_TYPE"] }}
     disks:

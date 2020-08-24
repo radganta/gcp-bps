@@ -1,9 +1,9 @@
 ---
 info:
-  title: BPS-on-GCP-1-vBlade-Use-Case-DM-Template.jinja.schema
+  title: BPS-on-GCP-1-vBlade-Add-On-Use-Case-DM-Template.jinja.schema
 
 imports:
-- path: BPS-on-GCP-1-vBlade-Use-Case-DM-Template.jinja
+- path: BPS-on-GCP-1-vBlade-Add-On-Use-Case-DM-Template.jinja
 
 properties:
   GCP_PROJECT_NAME:
@@ -236,13 +236,17 @@ properties:
     type: string
     default: "'true'"
 
+  GCP_VCONTROLLER_CAN_IP_FORWARD:
+    type: boolean
+    default: false
+
   GCP_VCONTROLLER_CUSTOM_IMAGE_PROJECT_NAME:
     type: string
     default: ixvm-261016
 
   GCP_VCONTROLLER_CUSTOM_IMAGE_FAMILY_NAME:
     type: string
-    default: ixia-breakingpoint-virtual-controller-9-00-108
+    default: ixia-breakingpoint-virtual-controller-9-10-110
 
   GCP_VCONTROLLER_MACHINE_TYPE:
     type: string
@@ -269,13 +273,17 @@ properties:
     type: string
     default: "'true'"
 
+  GCP_VBLADE_CAN_IP_FORWARD:
+    type: boolean
+    default: true
+
   GCP_VBLADE_CUSTOM_IMAGE_PROJECT_NAME:
     type: string
     default: ixvm-261016
 
   GCP_VBLADE_CUSTOM_IMAGE_FAMILY_NAME:
     type: string
-    default: ixia-breakingpoint-virtual-blade-9-00-108
+    default: ixia-breakingpoint-virtual-blade-9-10-110
 
   GCP_VBLADE_MACHINE_TYPE:
     type: string
