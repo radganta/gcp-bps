@@ -134,7 +134,6 @@ resources:
     networkInterfaces:
     - name: nic0
       network: projects/{{ properties["GCP_PROJECT_NAME"] }}/global/networks/{{ properties["GCP_LOGIN_ID_TAG"] }}-{{ properties["GCP_PROJECT_TAG"] }}-{{ properties["GCP_MGMT_VPC_NETWORK_NAME"] }}
-      networkIP: {{ properties["GCP_VCONTROLLER_IFACE_ETH0_PRIVATE_IP_ADDRESS"] }}
       subnetwork: regions/{{ properties["GCP_REGION_NAME"] }}/subnetworks/{{ properties["GCP_LOGIN_ID_TAG"] }}-{{ properties["GCP_PROJECT_TAG"] }}-{{ properties["GCP_MGMT_SUBNET_NAME"] }}
       accessConfigs:
       - name: external-nat
