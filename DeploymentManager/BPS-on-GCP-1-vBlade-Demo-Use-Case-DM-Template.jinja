@@ -209,7 +209,6 @@ resources:
     networkInterfaces:
     - name: nic0
       network: $(ref.{{ properties["GCP_LOGIN_ID_TAG"] }}-{{ properties["GCP_PROJECT_TAG"] }}-{{ properties["GCP_MGMT_VPC_NETWORK_NAME"] }}.selfLink)
-      networkIP: {{ properties["GCP_VCONTROLLER_IFACE_ETH0_PRIVATE_IP_ADDRESS"] }}
       subnetwork: $(ref.{{ properties["GCP_LOGIN_ID_TAG"] }}-{{ properties["GCP_PROJECT_TAG"] }}-{{ properties["GCP_MGMT_SUBNET_NAME"] }}.selfLink)
       accessConfigs:
       - name: external-nat
