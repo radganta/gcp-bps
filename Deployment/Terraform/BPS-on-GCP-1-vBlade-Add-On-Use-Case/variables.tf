@@ -301,7 +301,7 @@ variable "GCP_VCONTROLLER_CUSTOM_IMAGE_PROJECT_NAME" {
 
 variable "GCP_VCONTROLLER_CUSTOM_IMAGE_FAMILY_NAME" {
 	type = string
-	default = "ixia-breakingpoint-virtual-controller-9-10-110"
+	default = "ixia-breakingpoint-virtual-controller-9-10-110-update1"
 }
 
 variable "GCP_VCONTROLLER_MACHINE_TYPE" {
@@ -343,7 +343,7 @@ variable "GCP_VBLADE_CUSTOM_IMAGE_PROJECT_NAME" {
 
 variable "GCP_VBLADE_CUSTOM_IMAGE_FAMILY_NAME" {
 	type = string
-	default = "ixia-breakingpoint-virtual-blade-9-10-110"
+	default = "ixia-breakingpoint-virtual-blade-9-10-110-update1"
 }
 
 variable "GCP_VBLADE_MACHINE_TYPE" {
