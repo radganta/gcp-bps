@@ -35,7 +35,7 @@ variable "GCP_PROJECT_TAG" {
 variable "GCP_MGMT_FIREWALL_RULE_SOURCE_IP_RANGES" {
 	type = list(string)
 	default = [
-		"42.42.42.42/32"
+		"1.1.1.1/32"
 	]
 }
 
