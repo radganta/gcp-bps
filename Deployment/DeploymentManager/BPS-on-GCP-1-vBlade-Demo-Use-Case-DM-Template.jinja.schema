@@ -258,7 +258,7 @@ properties:
 
   GCP_VCONTROLLER_CUSTOM_IMAGE_FAMILY_NAME:
     type: string
-    default: ixia-breakingpoint-virtual-controller-9-10-110-update2
+    default: ixia-breakingpoint-virtual-controller-9-10-110-update3
 
   GCP_VCONTROLLER_MACHINE_TYPE:
     type: string
@@ -291,7 +291,7 @@ properties:
 
   GCP_VBLADE_CUSTOM_IMAGE_FAMILY_NAME:
     type: string
-    default: ixia-breakingpoint-virtual-blade-9-10-110-update2
+    default: ixia-breakingpoint-virtual-blade-9-10-110-update3
 
   GCP_VBLADE_MACHINE_TYPE:
     type: string
